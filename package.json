@@ -1,0 +1,26 @@
+{
+  "name": "greenscanner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "start": "npm run compile && node --inspect ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^22.4.0",
+    "prettier": "3.3.3",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.11.0",
+    "@octokit/rest": "^21.0.2",
+    "dotenv": "^16.4.5",
+    "graphql": "^16.9.0",
+    "octokit": "^4.0.2"
+  }
+}
