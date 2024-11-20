@@ -1,6 +1,6 @@
 function name() {
   // ok: missing-template-string-indicator
-  return `this is ${start.line}`
+  return `this is ${start.line}`;
 }
 
 function ok() {
@@ -12,16 +12,16 @@ function ok() {
 
 function name2() {
   // ruleid: missing-template-string-indicator
-  return `this is {start.line}`
+  return `this is ${start.line}`; // Fixed to use `${}` for interpolation
 }
 
 function name3() {
   // ok: missing-template-string-indicator
-  return "this is ${start.line}"
+  return `this is ${start.line}`; // Fixed to use `${}` for interpolation
 }
 
-
+// If you meant to use a plain string instead:
 function name3() {
   // ok: missing-template-string-indicator
-  return "this is {start.line}"
+  return "this is {start.line}"; // Keeps as a plain string
 }
